@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "**Why Programming?**&#x2028;"
-date:   2017-04-10 11:01:41 +0000
+title:  "** Why Programming?**"
+date:   2017-04-10 07:01:41 -0400
 ---
 
 
