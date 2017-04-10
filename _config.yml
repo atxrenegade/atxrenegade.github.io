@@ -1,0 +1,21 @@
+# Site settings
+title: Madness to Mastery
+header-img: img/home-bg.png
+email: harleighabel@gmail.com
+copyright_name: atxrenegade
+description: > # this means to ignore newlines until "baseurl:"
+  A Developers journey 
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  atxrenegade
+learn_profile: atxrenegade
+email_username: harleighabel@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
