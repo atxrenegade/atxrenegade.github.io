@@ -6,7 +6,7 @@ email: harleighabel@gmail.com
 copyright_name: Harleigh Abel
 description: > # this means to ignore newlines until "baseurl:"
   A Developers Journey 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://dev.to/atxrenegade" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  atxrenegade
 
