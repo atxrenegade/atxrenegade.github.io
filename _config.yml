@@ -1,15 +1,14 @@
 # Site settings
-title: Madness to Mastery
+author: Harleigh Abel
+title: From Madness to Mastery
 header-img: img/home-bg.png
 email: harleighabel@gmail.com
-copyright_name: atxrenegade
+copyright_name: Harleigh Abel
 description: > # this means to ignore newlines until "baseurl:"
-  A Developers journey 
+  A Developers Journey 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  atxrenegade
-learn_profile: atxrenegade
-email_username: harleighabel@gmail.com
 
 # Build settings
 markdown: kramdown
