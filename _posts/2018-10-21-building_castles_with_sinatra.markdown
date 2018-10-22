@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "BUILDING CASTLES WITH SINATRA"
-date:       2018-10-22 02:10:13 +0000
+date:       2018-10-21 22:10:15 -0400
 permalink:  building_castles_with_sinatra
 ---
 
@@ -94,6 +94,11 @@ As mentioned above I would like to add media queries to make this application mo
 ## AND SO I’VE CONCLUDED…
 
 I enjoyed the opportunity to create using all my new skills and knowledge in one application. It really brought to light areas that I hadn’t fully grasped yet, syntax I had remembered incorrectly and solidified concepts that prior to I may not have been confident about.  I am a really hands on learner and after this project I truly believe that it is through the creation and completion of a programmers own passion projects that one will learn and benefit from most.
+
+A demo of this application can be found at:
+https://youtu.be/K0f1uj3QtrU
+
+atxrenegade/Harleigh Abel
 
 
 
