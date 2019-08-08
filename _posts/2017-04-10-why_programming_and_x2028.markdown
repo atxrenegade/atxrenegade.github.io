@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "** Why Programming?**"
-date:   2017-04-10 07:01:41 -0400
+title:      "** Why Programming? **"
+date:       2017-04-10 07:01:41 -0400
+permalink:  why_programming_and_x2028
 ---
 
 
