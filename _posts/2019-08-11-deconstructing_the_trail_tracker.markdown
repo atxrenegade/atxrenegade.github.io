@@ -47,14 +47,13 @@ Polymorphic associations are a fairly straight foward concept but while I am pra
 
 **To implement polymorphic associations:**<br><br>
 
-
 <ol>
-&nbsp;&nbsp;&nbsp;&nbsp;Create your migration to build your model<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Add the [model] id and [model] type line to your migration file<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Run rake db:migrate<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Add the belongs_to association to your polymorphic model<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Add the reciprocal associations to your has_many models<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Create methods to create the appropriate restful routes<br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Create your migration to build your model</li><br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Add the [model] id and [model] type line to your migration file</li><br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Run rake db:migrate</li><br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Add the belongsto association to your polymorphic model</li><br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Add the reciprocal associations to your hasmany models</li><br><br>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Create methods to create the appropriate restful routes</li><br><br>
 </ol>			
 The unforseen complication of this type of association was that my rails path helpers no longer worked.  When I discovered this I made the amateur error orfreinventing the wheel without checking for an exisiting solution.  I ended up spending a whole lot of time building many neatly encapsulated helper methods to create my own paths for each polymorphic variation.   While refreshing my understanding of polymorphic associations for this blog post I stumbled across polymorphic route helpers that it did not even occur to would already be available.  Again, I would like to revisit this in depth in a future blog post.
 
