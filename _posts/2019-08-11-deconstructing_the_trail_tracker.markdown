@@ -28,7 +28,7 @@ The hurdles started with the amateur electrical wiring in our temporary accomoda
 
 
 ![](http://4.bp.blogspot.com/-u1gwflnN2nU/UcT5TE2kGwI/AAAAAAAAAmQ/yna9tX5z78g/s1600/island_ipad_fullsize.jpg)
-<br><br><br><br>
+<br><br>
 
 Aside from the logisitcal challenges I overcame there were few programmatical challenges along the way.
   	
@@ -45,15 +45,16 @@ When creating an architectural outline for my application, I realized that the i
 
 Polymorphic associations are a fairly straight foward concept but while I am practicing limiting my own scope, it is a concept with enough material to explore in a seperate blog post dedicated strictly to this topic where I would also like to explore polymorhpic route helpers so I will only cover it briefly cover here. <br><br>
 
-To implement polymorphic associations:<br><br>
+**To implement polymorphic associations:**<br><br>
 
 
-<ol>Create your migration to build your model<br><br>
-Add the [model] id and [model] type line to your migration file<br><br>
-Run rake db:migrate<br><br>
-Add the belongsto association to your polymorphic model<br><br>
-Add the reciprocal associations to your has many models<br><br>
-Create methods to create the appropriate restful routes<br><br>
+<ol>
+&nbsp;&nbsp;&nbsp;&nbsp;Create your migration to build your model<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add the [model] id and [model] type line to your migration file<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Run rake db:migrate<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add the belongs_to association to your polymorphic model<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add the reciprocal associations to your has_many models<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Create methods to create the appropriate restful routes<br><br>
 </ol>			
 The unforseen complication of this type of association was that my rails path helpers no longer worked.  When I discovered this I made the amateur error orfreinventing the wheel without checking for an exisiting solution.  I ended up spending a whole lot of time building many neatly encapsulated helper methods to create my own paths for each polymorphic variation.   While refreshing my understanding of polymorphic associations for this blog post I stumbled across polymorphic route helpers that it did not even occur to would already be available.  Again, I would like to revisit this in depth in a future blog post.
 
