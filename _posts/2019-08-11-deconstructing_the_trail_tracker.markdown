@@ -47,19 +47,19 @@ Polymorphic associations are a fairly straight foward concept but while I am pra
 
 To implement polymorphic associations:<br><br>
 
-			Create your migration to build your model
-			Add the [model] id and [model] type line to your migration file
-			Run rake db:migrate
-			Add the belongsto association to your polymorphic model
-			Add the reciprocal associations to your has many models
-			Create methods to create the appropriate restful routes
-			
-<br><br>
+
+<ol>Create your migration to build your model<br><br>
+Add the [model] id and [model] type line to your migration file<br><br>
+Run rake db:migrate<br><br>
+Add the belongsto association to your polymorphic model<br><br>
+Add the reciprocal associations to your has many models<br><br>
+Create methods to create the appropriate restful routes<br><br>
+</ol>			
 The unforseen complication of this type of association was that my rails path helpers no longer worked.  When I discovered this I made the amateur error orfreinventing the wheel without checking for an exisiting solution.  I ended up spending a whole lot of time building many neatly encapsulated helper methods to create my own paths for each polymorphic variation.   While refreshing my understanding of polymorphic associations for this blog post I stumbled across polymorphic route helpers that it did not even occur to would already be available.  Again, I would like to revisit this in depth in a future blog post.
 
 <br><br>
 ![](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Faturkewi.github.io%2Fimages%2Fpolymorphic.jpg&f=1)
-<br><br><br>
+<br><br>
 ##  Future Features
 This is a two part project and I intend to extend my app by giving users the capabilty to share feedback with and interact with other users by adding JS comments to Trails.  I would also like to use google maps api to enable users to add location maps of trails with start and end markers, use geolocation to display user or device position in relation to these trails and add google directions service to map direction to trail heads.
 
