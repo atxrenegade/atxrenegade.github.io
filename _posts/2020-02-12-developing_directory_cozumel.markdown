@@ -8,6 +8,12 @@ permalink:  developing_directory_cozumel
 
 [![Directory Cozumel](https://i.postimg.cc/tRrPwWSN/Screen-Shot-2020-02-10-at-11-00-30-PM.png)](https://postimg.cc/7b2fTGy5)
  <br><br>
+ 
+ [![Admin Panel](https://i.postimg.cc/vZts5YNS/Screen-Shot-2020-02-12-at-12-16-36-AM.png)](https://postimg.cc/sMxqrryp)
+  <br><br>
+  
+ [![User Entries](https://i.postimg.cc/pdVtCNNV/Screen-Shot-2020-02-12-at-12-16-24-AM.png)](https://postimg.cc/YvPV2sqT)
+  <br><br>
 
 When I initially began this project it was to be part two an existing rails Trail Tracker app I had already constructed. Midway through requirements changed from developing javascript elements for the existing application to the development of a new single page web app. I pivoted from my current project to accommodate these changes. The new requirements outlined development for an SPA constructed with an HTML, CSS, and "vanilla" Javascript front-end, and rails API backend, using Restful conventions, CRUD functionality, javascript object classes in traditional OOP style encapsulating related data and behavior, and AJAX/Async client-server interactions using JSON data format for these requests.
 
