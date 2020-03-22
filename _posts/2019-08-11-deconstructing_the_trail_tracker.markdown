@@ -19,7 +19,7 @@ And then Came the Other Parts… <br><br>
 
 ## And then Came the *Other* Parts… 
 <br>
-![](http://i.ebayimg.com/images/i/401066743191-0-1/s-l1000.jpg)
+![](https://i.ebayimg.com/images/i/401066743191-0-1/s-l1000.jpg)
 <br><br><br>
 Pure grit. That was what it ended up taking me to finish this application. Not because it was conceptually so challenging that I couldn't complete it. All my hurdles came in surprise packages from outside the development environment. First was my international move from the U.S. to an island in Mexico which tied up a huge chunk of my time and resources for a short period. Ok, no big deal. That was a choice and I had planned, researched and prepared for a graceful transition (Or so I thought). Then began the domino effect which started while wrapping up the tail end of the project, right as I was recording my demo video and writing my blog post, days before planning to schedule my assessment. <br><br>
   
