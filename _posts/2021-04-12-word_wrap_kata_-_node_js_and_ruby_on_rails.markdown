@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Word Wrap Kata - Node.js & Ruby on Rails"
-date:       2021-04-12 23:30:19 +0000
+date:       2021-04-12 19:30:20 -0400
 permalink:  word_wrap_kata_-_node_js_and_ruby_on_rails
 ---
 
@@ -47,7 +47,7 @@ Write the following in Rails and/or Node:
 
   
 
-![Word Wrap, literally](/img/blog/blog_post_7/christmas_word_wrap.jpg)
+![Word Wrap, literally](https://www.harleighabel.com/img/blog/blog_post_7/christmas_word_wrap.jpg)
 
 Word Wrap...again.
 
@@ -89,7 +89,7 @@ So after a rough overview plan, I started on the program logic. I am not a hard 
 
   
 
-![](/img/blog/blog_post_7/my_process.jpg)
+![](https://www.harleighabel.com/img/blog/blog_post_7/my_process.jpg)
 
 Cursing is an essential part of the creative process
 
@@ -109,14 +109,17 @@ A couple of the questions and issue arose while constructing the cli app. Decidi
   
 
 This was the fun part. Rails without ActiveRecord threw all kinds of loops, beginning with - what does your model class inherit from that will not require a database connection? Rumor has it that Rails 6 has a solution using inheritance from ActiveRecord Model, but I wasn't able to successfully implement this suggestion, and ended up using a bare class with no inheritance but that contained my static method and worked for this use case. Since I was limited to a static method and without class initialization, I could not initialize an instance to wrap my form\_for tags and had to resort to using standard html5 form tags. It also meant that I didn't have access to ActiveRecord data validations when persisting data. I had to come up with an alternate way to validate user input. I didn't want to clutter my controller with logic, or break the one class, one method rule I was still hanging on to, so I resorted to client-side validations with HTML5 to limit strings less than 10 chars and a regex pattern only allowing positive integers greater than zero. I went back and forth with this for a bit between JS and HTML5 solutions, and created a JS file to append errors messages to the DOM and eventually settled on the combination for the best of both worlds. I made sure to include strong params, and sanitize the processed user string returned by the controller by permitting only line breaks elements.
+  
+	  
 
   
 
 By far the time most time consuming and frustrating part of both exercises was configuring the asset pipeline. Every time I updated a dependency, added a new one, or edited a js file my app would break, or display pre-compiled file versions instead of current,and failed to update even after restarting the server. I reconfigured numerous assets and files half a dozen times before realizing that some of the directions I was following were Rails5 config, and others were for Rails6 config which were dramatically different, and often did not specify which rails version they were referring to. Rails6 asset pipeline, and the changes to include webpacker and sprockets since Rails5 is really worthy of it's own blog post. I'm going to have to sit with it, and go over my working solution again to fully comprehend what modifications worked. At one point I did discover I had overlooked missing quotations loading webpacker, which solved at least half the my issues. Rails has some great documentation about the asset pipeline to further explore for anyone interested. I was eventually able to get all my assets and dependencies playing nicely together and as intended. For more documentation about the asset pipeline: [https://guides.rubyonrails.org/asset\_pipeline.html](https://guides.rubyonrails.org/asset_pipeline.html)
 
-  
+   
+	   
 
-![](/img/blog/blog_post_7/sprockets.jpg)
+![](https://www.harleighabel.com/img/blog/blog_post_7/sprockets.jpg)
 
 How I view the Asset Pipeline - Rails6 - Sprockets & Webpacker
 
@@ -187,7 +190,10 @@ Reworking the Algorithm - Ruby
 To create my ruby algorithm I used my Javascript solution as my base with the expectation that I could translate most of my solution without any major modifications. I then realized I would not be able to nested methods for a recursive version. To solve this I iterated through a word array using .each() enclosing a while loop nested inside of a an if statement to parse and break up words larger than the column value and passed the remaining piece to the following if statement to parse the remaining word segment to add the appropriate line breaks and white spaces.
 
 Again comments have been removed and can be viewed in the repo.  
-https://github.com/atxrenegade/kata\_word\_wrap\_rails  
+https://github.com/atxrenegade/kata_word_wrap_rails   
+  
+	  
+		
 
   
 
@@ -231,7 +237,7 @@ What I Learned From This Code Challenge
   
 
 Since throughout the past year I've been pretty immersed in learning Java, while working primarily with JS frontend and Rails as an API, it gave me a chance to review using Rails views again. The challenge of creating backend and full stack micro applications without the use of a database challenged me to think outside the box to explore alternate solutions rather than depending on familiar libraries. The exercise (my typo - really!) gave me an opportunity to take explore more about Rails6 webpacker vs Rails5 use of sprockets for asset loading and pre-compiling. It familiarized me with HTML validations which I had previously relied on JS and ActiveRecord for. In this case I think my over complication of a simple problem, limited my scope and forced me outside of my comfort zone to explore other options and reanalyze my knowledge of certain libraries and concepts that I usually take for granted.
-
+  
 I think that Kata's are great practice in logical thinking and algorithm implementation that every developer can benefit from, but I also think that nothing beats the experience of building out actual applications. Thousands of code katas will not teach you all the idiosyncrasies and real world issues that arise when it comes to deployment, dependency conflicts, asset pipelines, and the million other finicky details that aren't part of Hackerrank, Codewars, LeetCode, bootcamps or a CS program for that matter. This turned out to be a good practice for both.
 
   
@@ -244,7 +250,10 @@ Coding Ninja Warrior
   
   
 
-The repo for the Node.js CLI can be found [here!](https://github.com/atxrenegade/kata_word_wrap_node)  
+The repo for the Node.js CLI can be found [here!](https://github.com/atxrenegade/kata_word_wrap_node)   
+  
+
 The repo for the Rails MVC version can be found [here!](https://github.com/atxrenegade/kata_word_wrap_rails)
+
 
 [atxrenegade/Harleigh Abel](https://github.com/atxrenegade)
